@@ -4,165 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to my resume</title>
+    <link rel="stylesheet" href="css/style.css"> 
   </head>
-  <body>
-    <!-- //  INTRO  // -->
+  <a href="resume.pdf" class="btn download-link" target="_blank">Download PDF</a>
+  <body class="resume"> 
+    <!-- // HEADER WITH BACKGROUND IMAGE // -->
     <header>
-      <!-- Start content edits below this line. -->
       <h1>Angelique Fernandez</h1>
       <h2>Student</h2>
-
-      <!-- End content edits here. -->
     </header>
 
     <main>
-      <!-- //  PROFILE  // -->
-      <section>
-        <!-- Start content edits below this line. -->
+      <!-- // PROFILE SECTION // -->
+      <section class="resume-section"> 
         <h2>This is me ^_^</h2>
-        <img src="images/profile-pic.jpeg" alt="photo of me" width="300" height="auto">
-        <h2></h2>
-        <p>My artistic journey serves as an escape from reality. I first started drawing at the age of five, I realized my love and passion for creating art. 
-          Back then I would get in trouble for having small doodles on my homework, and now they are a part of my creative process, guiding me towards my next artistic endeavor. 
-          My vision when creating art is both about focus and distraction at the same time. By focusing on my art, I continue to create art, and having distractions helps me realize 
-          what art I just have made. I’ll just keep going and not know what I am doing sometimes but that is what I call my own process. I expect my audience to know not only the outcome of my art 
-          but the emotions as well that are in there. I started with drawing and now gained experience of videographing, editing videos, creating video overlays for media streamers, editing photos, 
-          and creating digital art. Art is important to me because it holds the power to transcend boundaries, shows different ways to portray and communicates the ineffable..</p>
+        <img src="images/profile-pic.jpeg" alt="Photo of Angelique Fernandez" class="float-left">
+        <p>My artistic journey serves as an escape from reality. I first started drawing at the age of five and realized my passion for creating art...</p>
         <a href="index.html">Back to homepage</a>
-
-        <!-- End content edits here. -->
       </section>
 
-      <!-- //  PROJECTS  // -->
-      <section>
-        <!-- Start content edits below this line. -->
+      <!-- // PROJECTS SECTION // -->
+      <section class="resume-section">
         <h2>Projects</h2>
         <p>Here are a few of my projects. Enjoy!</p>
 
-        <!-- To add more items, copy this whole <section></section> block-->
-        <section>
+        <section class="project-item"> 
           <h3>The Clones</h3>
-          <p>This is a series collection of "The Clones". It first started with me, but I started
-            to enjoy taking photos of my friends doing different poses as if there are multiple of them.
-          </p>
-          <img src="images/THECLONES-Angie.jpg"  alt="The Clones Original" width="300" height="auto">
-          <p>This is the first set on my series starring me as the Orginal.
-          </p>
-          <p></p>
-          <img src="images/juliana-theclones.png" alt="juliana and the clones" width="300" height="auto">
-          <p>This is my friend, Juliana and her clones.
-          </p>
-          <p></p>
-          <img src="images/ken-theclones.png" alt="ken and the clones" width="300" height="auto">
-          <p>This is my cousin, Ken and his clones.
-          <p></p>
-          <img src="images/kamilia-theclones.png" alt="kamilia and the clones" width="300" height="auto">
-          <p>This is my best friend, Kamilia and her clones.
-            <p></p>
-            <h3>Here are my videos.</h3>
-            <p>
-              <p>This is a video of my friends showing their relationship either being romantic or is it just platonic emotions love.
-                <p></p>
-              <img src="images/romantic-vs-emotional-love.png" alt="video about my three friends showing the difference between
-              romantic and emotional love" width="300" height="auto">
-           <a href="https://youtu.be/KYFElBZrLG0?si=8i7VUkXHM-eGrmsS" target="_blank">Link to project</a>
-          </p>
+          <p>A photography series where I experimented with multiple exposures to create "clones" of myself and my friends.</p>
 
-<!-- <p>additional links, e.g. newsletter</p> -->
-<!-- <a href="#" target="_blank">Another link</a> -->
-
-        </section>
-        
-        <!-- End content edits here. -->
-      </section>
-
-      <!-- //  WORK EXPERIENCE  // -->
-      <section>
-        <!-- Start content edits below this line. 
-        <h2>Work Experience</h2>
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
-
-        To add more items, copy this whole <section></section> block
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul> -->
+          <img src="images/THECLONES-Angie.jpg" alt="The Clones Original">
+          <p>My first experiment in the series, starring myself.</p>
         </section>
 
-        <!-- End content edits here. -->
+        <section class="project-item">
+          <img src="images/juliana-theclones.png" alt="Juliana and the clones">
+          <p>This is my friend Juliana and her clones.</p>
+        </section>
+
+        <section class="project-item">
+          <img src="images/ken-theclones.png" alt="Ken and the clones">
+          <p>This is my cousin Ken and his clones.</p>
+        </section>
+
+        <section class="project-item">
+          <img src="images/kamilia-theclones.png" alt="Kamilia and the clones">
+          <p>This is my best friend Kamilia and her clones.</p>
+        </section>
+
+        <section class="project-item">
+          <h3>Romantic vs. Emotional Love</h3>
+          <img src="images/romantic-vs-emotional-love.png" alt="Video showing the difference between romantic and emotional love">
+          <p>A short film exploring the contrast between romantic love and platonic emotional connections.</p>
+          <a href="https://youtu.be/KYFElBZrLG0?si=8i7VUkXHM-eGrmsS" target="_blank">Watch the video</a>
+        </section>
       </section>
 
-      <!-- //  EDUCATION & CERTIFICATIONS  // -->
-      <section>
-        <!-- Start content edits below this line.  -->
+      <!-- // EDUCATION SECTION // -->
+      <section class="resume-section">
         <h2>Education</h2>
 
-<!-- San Jose State University Section -->
-<section>
-  <h3>San Jose State University, San Jose, CA</h3>
-  <p>Undergraduate: Digital Media Arts (08/2022 - Current)</p>
-  <ul>
-    <li>Developing advanced skills in digital media production, including video editing and motion graphics.</li>
-    <li>Collaborating on various multimedia projects as part of student teams to enhance creative solutions.</li>
-    <li>Participating in workshops and seminars to stay updated with the latest industry tools and technologies.</li>
-  </ul>
-</section>
+        <section>
+          <h3>San Jose State University, San Jose, CA</h3>
+          <p><strong>Undergraduate: Digital Media Arts (08/2022 - Current)</strong></p>
+        </section>
 
-<!-- Chabot College Section -->
-<section>
-  <h3>Chabot College, Hayward, CA</h3>
-  <p>Associate of Arts: Graphic Design (05/2022)</p>
-  <ul>
-    <li>Gained proficiency in Adobe Creative Suite, including Photoshop, Illustrator, and InDesign.</li>
-    <li>Completed multiple design projects, ranging from print media to digital platforms.</li>
-    <li>Developed a strong foundation in typography, color theory, and layout design principles.</li>
-  </ul>
-</section>
+        <section>
+          <h3>Chabot College, Hayward, CA</h3>
+          <p><strong>Associate of Arts: Graphic Design (05/2022)</strong></p>
+        </section>
 
-<!-- Mount Eden High School Section -->
-<section>
-  <h3>Mount Eden High School, Hayward, CA</h3>
-  <p>High School Diploma (06/2019)</p>
-  <ul>
-    <li>Graduated with honors and consistently maintained a high GPA throughout high school.</li>
-    <li>Active member of the school's art club, contributing to mural projects and exhibitions.</li>
-    <li>Engaged in various extracurricular activities, including volunteer work and leadership roles in school events.</li>
-  </ul>
-</section>
-
-
-        <!-- End content edits here. -->
+        <section>
+          <h3>Mount Eden High School, Hayward, CA</h3>
+          <p><strong>High School Diploma (06/2019)</strong></p>
+        </section>
       </section>
     </main>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <!-- // FOOTER SECTION // -->
     <footer>
-      <!-- Start content edits below this line. -->
       <p>© 2025 by Angelique Joy Perez Fernandez | <a href="mailto:angeliquejoypf21@gmail.com">angeliquejoypf21@gmail.com</a></p>
-
-      <!-- Add or remove any networks. -->
       <ul>
-        <li>
-          <a href="#" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@tbhangiee" target="_blank">YouTube</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Instagram</a>
-        </li>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.youtube.com/@tbhangiee" target="_blank">YouTube</a></li>
+        <li><a href="#" target="_blank">Instagram</a></li>
       </ul>
-      
-      
-      <!-- End content edits here. -->
     </footer>
   </body>
 </html>
