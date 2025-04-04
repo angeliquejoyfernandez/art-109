@@ -1,61 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Angelique Joy Fernandez</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- //  INTRO  // -->
+    <!-- // NAV MENU // -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Angelique</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- // INTRO // -->
     <header>
-      <!-- Start content edits below this line. -->
       <h1>Angelique Fernandez</h1>
       <h2>Student</h2>
-
-      <!-- End content edits here. -->
     </header>
 
-    <!-- //  ABOUT ME  // -->
-    <main>
-      <!-- Start content edits below this line. -->
+    <!-- // about ME // -->
+    <main id="about">
       <h2>About me ^_^</h2>
 
-      <img src="images/profile-pic.jpeg" alt="Angelique Fernandez" class="float-left">
-      <p>Born and raised in California, Angelique Fernandez draws inspiration from the interplay between digital and physical art forms. She has spent her entire life in California but has recently embraced the joy of traveling, exploring destinations like Hawaii, the Bahamas, and the Philippines.
-
-        Angelique's artistic journey began at an early age with a passion for visual storytelling, which she has cultivated through photography, digital editing, and illustration. She earned an Associate of Arts in Graphic Design from Chabot Community College before transferring to San Jose State University, where she is currently pursuing a degree in Digital Media Art.
-        
-        Her creative work is deeply influenced by cartoon characters, blending familiar styles with her own unique twist. She continually pushes the boundaries of digital media, crafting everything from custom emojis and Twitch overlays to immersive visual narratives. Through her online shop on Ko-fi, she shares her work with a growing audience.
-        
-        With every creation, Angelique invites viewers into her imaginative world, where the line between reality and fantasy is beautifully blurred. As she continues to explore and refine her craft, she remains committed to artistic growth and aspires to expand her online presence and career as a digital artist.</p>
-      <p>To learn more about my work history, check out my <a href="resume.html"> resume</a>. Thanks for stopping by!</p>
-
-      <!-- End content edits here. -->
+      <img
+        src="images/profile-pic.jpeg"
+        alt="Angelique Fernandez"
+        class="float-left"
+      />
+      <p>
+        Born and raised in California, Angelique Fernandez draws inspiration
+        from the interplay between digital and physical art forms. She has spent
+        her entire life in California but has recently embraced the joy of
+        traveling, exploring destinations like Hawaii, the Bahamas, and the
+        Philippines.
+      </p>
+      <p>
+        Angelique's artistic journey began at an early age with a passion for
+        visual storytelling, which she has cultivated through photography,
+        digital editing, and illustration. She earned an Associate of Arts in
+        Graphic Design from Chabot Community College before transferring to San
+        Jose State University, where she is currently pursuing a degree in
+        Digital Media Art.
+      </p>
+      <p>
+        Her creative work is deeply influenced by cartoon characters, blending
+        familiar styles with her own unique twist. She continually pushes the
+        boundaries of digital media, crafting everything from custom emojis and
+        Twitch overlays to immersive visual narratives. Through her online shop
+        on Ko-fi, she shares her work with a growing audience.
+      </p>
+      <p>
+        With every creation, Angelique invites viewers into her imaginative
+        world, where the line between reality and fantasy is beautifully blurred.
+        As she continues to explore and refine her craft, she remains committed
+        to artistic growth and aspires to expand her online presence and career
+        as a digital artist.
+      </p>
+      <p>
+        To learn more about my work history, check out my
+        <a href="resume.html">resume</a>. Thanks for stopping by!
+      </p>
     </main>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <!-- Start content edits below this line. -->
-      <p>© 2025 by Angelique Fernandez | <a href="mailto:angeliquejoypf21@gmail.com">angeliquejoypf21@gmail.com</a></p>
 
-      <!-- Add or remove any networks. -->
+    <footer id="contact">
+      <p>
+        © 2025 by Angelique Fernandez |
+        <a href="mailto:angeliquejoypf21@gmail.com"
+          >angeliquejoypf21@gmail.com</a
+        >
+      </p>
+
       <ul>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
         <li>
-          <a href="#" target="_blank">LinkedIn</a>
+          <a href="https://www.youtube.com/@tbhangiee" target="_blank"
+            >YouTube</a
+          >
         </li>
+        <li><a href="#" target="_blank">Instagram</a></li>
         <li>
-          <a href="https://www.youtube.com/@tbhangiee" target="_blank">YouTube</a>
-        </li>
-        <li>
-          <a href="#" target="_blank">Instagram</a>
-        </li>
-        <li>
-        <a href="https://ko-fi.com/tbhangiee" target="_blank" >Kofi Shop</a>
+          <a href="https://ko-fi.com/tbhangiee" target="_blank">Kofi Shop</a>
         </li>
       </ul>
-      
-      <!-- End content edits here. -->
     </footer>
+
+    <!-- //nav -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      });
+    </script>
   </body>
 </html>
