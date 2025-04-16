@@ -221,5 +221,15 @@ header {
         display: flex;
     }
 }
-
+/* //Image size */
+.project-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
 

@@ -15,8 +15,8 @@
       <ul class="nav-links">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="menu-toggle">
         <span class="bar"></span>
@@ -31,7 +31,7 @@
       <h2>Student</h2>
     </header>
 
-    <!-- // about ME // -->
+    <!-- // ABOUT ME // -->
     <main id="about">
       <h2>About me ^_^</h2>
 
@@ -75,8 +75,32 @@
       </p>
     </main>
 
+    <!-- // CONTACT FORM //
+    <section id="contact-form">
+      <h2>Contact Me</h2>
+      <form
+        action="mailto:angeliquejoypf21@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-    <footer id="contact">
+        <label for="message">Your Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="40"
+          required
+        ></textarea><br /><br />
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </section> -->
+
+    <!-- // FOOTER // -->
+    <footer>
       <p>
         © 2025 by Angelique Fernandez |
         <a href="mailto:angeliquejoypf21@gmail.com"
@@ -98,7 +122,7 @@
       </ul>
     </footer>
 
-    <!-- //nav -->
+    <!-- //nav toggle script -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const menuToggle = document.querySelector('.menu-toggle');

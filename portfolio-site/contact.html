@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Angelique</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAV MENU -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Angelique</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- CONTACT FORM -->
+    <main>
+      <h1>Contact Me</h1>
+      <p>I'd love to hear from you! Send me a message below.</p>
+      <form
+        action="mailto:angeliquejoypf21@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="message">Your Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="40"
+          required
+        ></textarea><br /><br />
+
+        <input type="submit" value="Send Message" />
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        © 2025 by Angelique Fernandez |
+        <a href="mailto:angeliquejoypf21@gmail.com"
+          >angeliquejoypf21@gmail.com</a
+        >
+      </p>
+
+      <ul>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+        <li>
+          <a href="https://www.youtube.com/@tbhangiee" target="_blank"
+            >YouTube</a
+          >
+        </li>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li>
+          <a href="https://ko-fi.com/tbhangiee" target="_blank">Kofi Shop</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      });
+    </script>
+  </body>
+</html>
