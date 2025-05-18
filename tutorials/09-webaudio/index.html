@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Audio Demo</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Optional Three.js import map (safe to leave even if unused) -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/",
+          "three/libs/": "https://unpkg.com/three@0.162.0/examples/libs/"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    
+    <header>
+      <p>web audio</p>
+    </header>
+
+    
+    <audio id="song" src="media/lioncub2.mp3"></audio>
+    <audio id="sfx" src="media/raccoon3.mp3"></audio>
+    <audio id="squirrel" src="media/SQMarsupflyingsquirrel2.mp3"></audio>
+    <audio id="koala" src="media/koala[1].mp3"></audio>
+
+   
+    <div class="sound-block">
+      <button id="play-lion">🦁 Play Lion Cub</button>
+      <input type="range" id="volume-lion" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="sound-block">
+      <button id="play-raccoon">🦝 Play Raccoon</button>
+      <input type="range" id="volume-raccoon" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="sound-block">
+      <button id="play-squirrel">🐿️ Play Flying Squirrel</button>
+      <input type="range" id="volume-squirrel" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <div class="sound-block">
+      <button id="play-koala">🐨 Play Koala</button>
+      <input type="range" id="volume-koala" min="0" max="1" step="0.01" value="1" />
+    </div>
+
+    <script src="js/sound.js"></script>
+  </body>
+</html>
